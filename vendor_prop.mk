@@ -46,8 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.umax=1920x1080 \
     persist.vendor.camera.display.lmax=1280x720 \
+    camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk \
     camera.lowpower.record.enable=1 \
-    vidc.enc.dcvs.extra-buff-count=2
+    vidc.enc.dcvs.extra-buff-count=2 \
+    camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk 
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -71,6 +73,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Factory reset protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/config
+
+# Fp Gestures
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.fp.navigation=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \

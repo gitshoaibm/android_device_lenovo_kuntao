@@ -48,8 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.lmax=1280x720 \
     camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk \
     camera.lowpower.record.enable=1 \
-    vidc.enc.dcvs.extra-buff-count=2 \
-    camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk 
+    vidc.enc.dcvs.extra-buff-count=2 
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \

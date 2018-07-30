@@ -239,7 +239,7 @@ etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
 
 # Camera sensors
 etc/camera/lenovo_kuntao_camera.xml:vendor/etc/camera/lenovo_kuntao_camera.xml
-vendor/lib/libmmcamera_imx258.so
+vendor/lib/libmmcamera_imx258.so|2c11802dac9ef611fece6fe4dc3c533f4949f276
 vendor/lib/libmmcamera_ov5695.so
 
 # Charger
@@ -468,6 +468,15 @@ vendor/bin/pm-proxy|e12c72d05c764a2c45b2a5d4d1886519cba3fb16
 vendor/bin/pm-service|83fac998bf8f651f2f0cd2385f6e1b7c3eefe5ea
 vendor/lib64/libperipheral_client.so|d6db5efd4667ae3e831403f4e313fa38a5ae7bc8
 
+# Power-off alarm - from tissot - OPM1.171019.026
+etc/permissions/vendor-qti-hardware-alarm.xml:vendor/etc/permissions/vendor-qti-hardware-alarm.xml|99ea2b3abffc975fb9875b5b3befabfb6eead7b9
+-vendor/app/PowerOffAlarm/PowerOffAlarm.apk|ef2832a5261078eb6f9444b7939b1aa819849736
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|d99c58d75145d9cc2176605f76eaf3012f6b8109
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar|d9b2fefcbe0fe30cfd54a5f7622e5964d55e8415
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|cbee74bc88e007490e517ba310defec360ea0cb0
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|583a062f31e325321e5efce79add7422dc3a4a5b
+
 # QMI - from tissot - OPR1.170623.026
 etc/permissions/qti_libpermissions.xml:vendor/etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml:vendor/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
@@ -503,10 +512,10 @@ vendor/lib64/libqmiservices.so|d0e960626c0819113bfc023dd704523867091c77
 vendor/lib64/libsmemlog.so|512653d3d9563fda55acb84d76006c298eb78ba2
 
 # RIL - from tissot - OPR1.170623.026
--app/datastatusnotification/datastatusnotification.apk|c599e18140162201c2fe3d431ab58f770f716b84
--app/QtiTelephonyService/QtiTelephonyService.apk|7d7104c26c7c1e9487d9c41d48f0e0348135cb61
-etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
-framework/qcrilhook.jar|cb56e114f8f8ecf1c7ea5f35107bafc6bf49a194
+-app/datastatusnotification/datastatusnotification.apk:vendor/app/datastatusnotification/datastatusnotification.apk|c599e18140162201c2fe3d431ab58f770f716b84
+-app/QtiTelephonyService/QtiTelephonyService.apk:vendor/app/QtiTelephonyService/QtiTelephonyService.apk|7d7104c26c7c1e9487d9c41d48f0e0348135cb61
+etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml|cf740b4339659e7a30cabcd1c2fe5066e69b8760
+framework/qcrilhook.jar:vendor/framework/qcrilhook.jar|cb56e114f8f8ecf1c7ea5f35107bafc6bf49a194
 framework/qti-telephony-common.jar|2eba987ae297a892e895ec1e9a302b41dbe0232e
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|f313f243661c8e516ecc6a5785e8f0829daedb1c
 vendor/bin/ATFWD-daemon|9778a62bb94f9eeb49190908bb9b74060acd4fa6

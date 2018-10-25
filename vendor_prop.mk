@@ -81,8 +81,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
+persist.radio.RATE_ADAPT_ENABLE=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.VT_USE_MDM_TIME=0
+persist.ims.disableADBLogs=2
+persist.ims.disableDebugLogs=0
+persist.ims.disableIMSLogs=0
+persist.ims.disableQXDMLogs=0
+persist.ims.rcs=false
+persist.ims.volte=true
+persist.ims.vt=false
+persist.ims.vt.epdg=false
+persist.mm.sta.enable=0
+persist.vt.supported=0
+persist.volte_enabled_by_hw=1
+persist.dbg.volte_avail_ovr=1
 
 # Gps
 PRODUCT_PROPERTY_OVERRIDES += \

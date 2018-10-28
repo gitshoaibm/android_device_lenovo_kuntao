@@ -35,9 +35,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.umax=1920x1080 \
     persist.vendor.camera.display.lmax=1280x720 \
     vidc.enc.dcvs.extra-buff-count=2 \
+    vidc.dec.downscalar_width=1920 \
+    vidc.dec.downscalar_height=1088 \
+    vidc.dec.disable.split.cpu=1 \
+    vidc.enc.disable_bframes=1 \
+    vidc.enc.disable_pframes=1 \
     camera.lowpower.record.enable=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1
-
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.camera.HAL3.enabled=1
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.cne.feature=1

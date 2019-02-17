@@ -97,6 +97,8 @@ on boot
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
+    mkdir /data/validity 0775 system system
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
@@ -159,6 +161,9 @@ on post-fs-data
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
 
+on enable-fp-gestures
+    setprop persist.sys.fp.navigation 1
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     # Reset read ahead for dm-0 and dm-1 to 512kb
@@ -168,6 +173,7 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+    trigger enable-fp-gestures
 
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4

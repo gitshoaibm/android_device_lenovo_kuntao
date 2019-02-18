@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -15,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_kuntao.mk
+    $(LOCAL_DIR)/aosp_kuntao.mk

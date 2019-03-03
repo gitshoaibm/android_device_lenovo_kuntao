@@ -32,7 +32,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_DENSITY := xxhdpi
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 
 # Inherit device configuration

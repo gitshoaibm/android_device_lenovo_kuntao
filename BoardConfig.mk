@@ -113,6 +113,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -170,7 +171,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 VENDOR_SECURITY_PATCH := 2017-11-01
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true

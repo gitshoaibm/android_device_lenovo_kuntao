@@ -346,6 +346,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
+#Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2017 \
+    WallpapersBReel2018
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \

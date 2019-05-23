@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
-    libfmjni
+    libfmjni \
+    Eleven
 
 # For config.fs
 PRODUCT_PACKAGES += \

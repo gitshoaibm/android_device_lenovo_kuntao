@@ -25,21 +25,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common PixelExperience stuff.
-# Inherit some common AOSP stuff.
-
-TARGET_GAPPS_ARCH := arm64
-TARGET_DENSITY := xxhdpi
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
+# Inherit some common Potato stuff.
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_kuntao
+PRODUCT_NAME := potato_kuntao
 PRODUCT_DEVICE := kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo P2a42
